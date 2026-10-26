@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --color-brand: #0aad0a;
+  --color-dark: #212529;
+  --color-light: #f8f9fa;
+
+  --color-store-grocery: #e9f2eb;
+  --color-store-furniture: #f4f6f8;
+}
+
+:root {
+  color-scheme: only light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
