@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshCart</title>
+    <link rel="stylesheet" crossorigin href="./assets/index-BroLl7ph.css">
+  </head>
+  <body 
+    class="
+      bg-light text-dark 
+      dark:bg-gray-900 dark:text-gray-100 
+      font-sans antialiased 
+      transition-colors duration-200
+    "
+  >
+    
+    <nav 
+      class="
+        sticky top-0 z-50 
+        py-3 sm:py-3.5 
+        bg-white border-b border-gray-200/80 
+        dark:bg-gray-900 dark:border-gray-800 
+        transition-colors duration-200
+      "
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        
+        <a 
+          href="#" 
+          class="
+            group flex items-center gap-1.5 sm:gap-2 outline-none
+            text-xl sm:text-2xl font-semibold tracking-tight text-dark
+            dark:text-white
+          "
+        >
+          <div 
+            class="
+              flex items-center justify-center 
+              w-8 h-8 sm:w-9 sm:h-9 rounded-lg 
+              bg-brand/10 text-brand 
+              group-hover:scale-105 group-hover:rotate-6 
+              transition-transform duration-300
+            "
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+            </svg>
+          </div>
+
+          <span class="group-hover:text-brand transition-colors duration-200">
+            FreshCart
+          </span>
+        </a>
+
+        <div class="flex items-center gap-3">
+          
+          <button 
+            id="theme-toggle"
+            type="button" 
+            aria-label="Toggle light / dark mode"
+            class="
+              relative inline-flex items-center shrink-0 cursor-pointer 
+              h-8 w-16 p-1 rounded-full 
+              bg-gray-200 dark:bg-gray-700 
+              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 
+              transition-colors duration-300
+            "
+          >
+            <span 
+              class="
+                pointer-events-none flex items-center justify-center 
+                h-6 w-6 rounded-full shadow-sm 
+                bg-dark text-gray-100 
+                dark:bg-gray-100 dark:text-gray-600 
+                translate-x-0 dark:translate-x-8 
+                transition-all duration-300 ease-in-out
+              "
+            >
+              <svg class="h-4 w-4 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+              </svg>
+
+              <svg class="h-4 w-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </button>
+
+          <a 
+            href="https://codescandy.com/template/ecommerce-website-template/" 
+            target="_blank"
+            class="
+              inline-flex items-center justify-center 
+              px-3.5 py-2 sm:px-5 sm:py-2.5 
+              text-xs sm:text-sm font-medium 
+              bg-light text-dark border border-dark rounded-lg shadow-sm 
+              hover:bg-dark hover:text-white 
+              dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 
+              dark:hover:bg-white dark:hover:text-dark dark:hover:border-white 
+              active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand 
+              transition-all duration-200
+            "
+          >
+            Buy Now
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <section class="relative py-12 sm:py-20 lg:py-28 overflow-hidden">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+
+        <!-- Heading -->
+        <h1 
+          class="
+            mb-4 sm:mb-6 
+            text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight 
+            text-dark dark:text-white
+          "
+        >
+          Multi-Purpose E-commerce <br class="hidden sm:inline" />
+          HTML Template
+        </h1>
+
+        <p 
+          class="
+            max-w-2xl mx-auto mb-6 sm:mb-8 px-2 sm:px-0 
+            text-sm sm:text-base md:text-lg leading-relaxed 
+            text-gray-600 dark:text-gray-400
+          "
+        >
+          Build your online store with a premium Multi-Purpose E-commerce HTML template. 
+          Offering a sleek design, customizable features, and responsive layouts, this front-end 
+          template is perfect for any e-commerce business.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-8 sm:mb-10">
+          <div class="flex -space-x-2 overflow-hidden py-1">
+            <img class="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white dark:ring-gray-900 object-cover hover:scale-110 hover:z-10 transition-transform duration-200 cursor-pointer" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Avatar 1" />
+            <img class="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white dark:ring-gray-900 object-cover hover:scale-110 hover:z-10 transition-transform duration-200 cursor-pointer" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Avatar 2" />
+            <img class="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white dark:ring-gray-900 object-cover hover:scale-110 hover:z-10 transition-transform duration-200 cursor-pointer" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Avatar 3" />
+          </div>
+          
+          <span class="text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300"> 
+            Over 550+ Happy Developers
+          </span>
+        </div>
+
+        <div class="px-4 sm:px-0">
+          <a 
+            href="#stores" 
+            class="
+              group inline-flex items-center justify-center gap-2 
+              w-full sm:w-auto px-6 py-3 
+              text-sm font-semibold 
+              bg-light text-dark border border-dark rounded-lg shadow-sm 
+              hover:bg-dark hover:text-white 
+              dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 
+              dark:hover:bg-white dark:hover:text-dark dark:hover:border-white 
+              active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand 
+              transition-all duration-200
+            "
+          >
+            <span>View Store Demo</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Store demo -->
+    <section id="stores" class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 sm:space-y-16 scroll-mt-20">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+
+        <!-- Grocery store -->
+        <div 
+          class="
+            relative flex flex-col items-center
+            w-full px-6 pt-12 sm:pt-16 sm:px-12 rounded-3xl sm:rounded-4xl overflow-hidden
+            bg-store-grocery border border-emerald-900/5 
+            dark:bg-emerald-950/25 dark:border-emerald-500/10
+            transition-colors duration-200
+          "
+        >
+          <div class="text-center max-w-2xl mx-auto z-10">
+            <h2 
+              class="
+                text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight
+                text-dark dark:text-white
+              "
+            >
+              Grocery Store
+            </h2>
+
+            <p 
+              class="
+                mt-3 sm:mt-4
+                text-sm sm:text-base md:text-lg leading-relaxed
+                text-gray-600 dark:text-gray-300
+              "
+            >
+              Your one-stop shop for fresh produce, organic goods, dairy, baked items, and everyday essentials.
+            </p>
+
+            <!-- View Demo -->
+            <div class="mt-6 mb-8 sm:mb-12">
+              <a 
+                href="https://freshcart.codescandy.com/index.html" 
+                class="
+                  group/link relative inline-block pb-1
+                  text-base sm:text-lg font-semibold tracking-tight
+                  text-dark dark:text-white outline-none
+                "
+              >
+                <span>View Demo</span>
+                <!-- Underlined animation -->
+                <span 
+                  class="
+                    absolute bottom-0 left-0 
+                    h-0.5 w-0 rounded-full
+                    bg-dark dark:bg-white
+                    group-hover/link:w-full
+                    transition-all duration-300 ease-in-out
+                  "
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Img -->
+          <a 
+            href="https://freshcart.codescandy.com/index.html" 
+            class="
+              block w-full max-w-5xl mx-auto
+              transition-transform duration-500 ease-out 
+              hover:scale-110 hover:-translate-y-2
+            "
+          >
+            <img 
+              src="grocery-store.png" 
+              alt="Grocery Store Demo Mockup" 
+              class="w-full h-auto object-contain mx-auto drop-shadow-sm select-none pointer-events-none"
+            />
+          </a>
+        </div>
+
+        <!-- Furniture Store -->
+        <div 
+          class="
+            relative flex flex-col items-center
+            w-full px-6 pt-12 sm:pt-16 sm:px-12 rounded-3xl sm:rounded-4xl overflow-hidden
+            bg-store-furniture border border-gray-200/80 
+            dark:bg-gray-800/50 dark:border-gray-700/60
+            transition-colors duration-200
+          "
+        >
+          <div class="text-center max-w-2xl mx-auto z-10">
+            
+            <!-- Badge NEW -->
+            <div class="mb-4">
+              <span 
+                class="
+                  inline-block px-3 py-1 rounded-full
+                  text-xs font-semibold uppercase tracking-wider
+                  bg-emerald-600 text-white shadow-sm
+                "
+              >
+                NEW
+              </span>
+            </div>
+
+            <h2 
+              class="
+                text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight
+                text-dark dark:text-white
+              "
+            >
+              Furniture Store
+            </h2>
+
+            <p 
+              class="
+                mt-3 sm:mt-4
+                text-sm sm:text-base md:text-lg leading-relaxed
+                text-gray-600 dark:text-gray-300
+              "
+            >
+              Minimalist furniture store design, perfect for your online furniture shop.
+            </p>
+
+            <div class="mt-6 mb-8 sm:mb-12">
+              <a 
+                href="https://freshcart-furniture.codescandy.com/" 
+                class="
+                  group/link relative inline-block pb-1
+                  text-base sm:text-lg font-semibold tracking-tight
+                  text-dark dark:text-white outline-none
+                "
+              >
+                <span>View Demo</span>
+                <span 
+                  class="
+                    absolute bottom-0 left-0 
+                    h-0.5 w-0 rounded-full
+                    bg-dark dark:bg-white
+                    group-hover/link:w-full
+                    transition-all duration-300 ease-in-out
+                  "
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <a 
+            href="https://freshcart-furniture.codescandy.com/" 
+            class="
+              block w-full max-w-5xl mx-auto
+              transition-transform duration-500 ease-out 
+              hover:scale-110 hover:-translate-y-2
+            "
+          >
+            <img 
+              src="furniture-store.png" 
+              alt="Furniture Store Demo Mockup" 
+              class="w-full h-auto object-contain mx-auto drop-shadow-sm select-none pointer-events-none"
+            />
+          </a>
+        </div>
+
+        <!-- Fashion store - Comming soon -->
+        <div 
+          class="
+            relative flex flex-col items-center
+            w-full px-6 pt-12 sm:pt-16 sm:px-12 rounded-3xl sm:rounded-4xl overflow-hidden
+            bg-store-furniture border border-gray-200/80 
+            dark:bg-gray-800/50 dark:border-gray-700/60
+            transition-colors duration-200
+          "
+        >
+          <div class="text-center max-w-2xl mx-auto z-10">
+
+            <h2 
+              class="
+                text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight
+                text-dark dark:text-white
+              "
+            >
+              Fashion Store
+            </h2>
+
+            <p 
+              class="
+                mt-3 sm:mt-4
+                text-sm sm:text-base md:text-lg leading-relaxed
+                text-gray-600 dark:text-gray-300
+              "
+            >
+              Furniture store design, perfect for your online furniture shop.
+            </p>
+
+            <div class="mt-6 mb-8 sm:mb-12">
+              <a 
+                href="https://freshcart-furniture.codescandy.com/" 
+                class="
+                  group/link relative inline-block pb-1
+                  text-base sm:text-lg font-semibold tracking-tight
+                  text-dark dark:text-white outline-none
+                "
+              >
+                <span>Comming soon</span>
+                <span 
+                  class="
+                    absolute bottom-0 left-0 
+                    h-0.5 w-0 rounded-full
+                    bg-dark dark:bg-white
+                    group-hover/link:w-full
+                    transition-all duration-300 ease-in-out
+                  "
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <a 
+            href="#" 
+            class="
+              block w-full max-w-5xl mx-auto
+              transition-transform duration-500 ease-out 
+              hover:scale-110 hover:-translate-y-2
+            "
+          >
+            <img 
+              src="placeholder.png" 
+              alt="Furniture Store Demo Mockup" 
+              class="w-full h-auto object-contain mx-auto drop-shadow-sm select-none pointer-events-none"
+            />
+          </a>
+        </div>
+
+        <!-- Store ? - Comming soon -->
+        <div 
+          class="
+            relative flex flex-col items-center
+            w-full px-6 pt-12 sm:pt-16 sm:px-12 rounded-3xl sm:rounded-4xl overflow-hidden
+            bg-store-furniture border border-gray-200/80 
+            dark:bg-gray-800/50 dark:border-gray-700/60
+            transition-colors duration-200
+          "
+        >
+          <div class="text-center max-w-2xl mx-auto z-10">
+
+            <h2 
+              class="
+                text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight
+                text-dark dark:text-white
+              "
+            >
+              Store ?
+            </h2>
+
+            <p 
+              class="
+                mt-3 sm:mt-4
+                text-sm sm:text-base md:text-lg leading-relaxed
+                text-gray-600 dark:text-gray-300
+              "
+            >
+              Comming soon
+            </p>
+
+            <div class="mt-6 mb-8 sm:mb-12">
+              <a 
+                href="#" 
+                class="
+                  group/link relative inline-block pb-1
+                  text-base sm:text-lg font-semibold tracking-tight
+                  text-dark dark:text-white outline-none
+                "
+              >
+                <span>Comming soon</span>
+                <span 
+                  class="
+                    absolute bottom-0 left-0 
+                    h-0.5 w-0 rounded-full
+                    bg-dark dark:bg-white
+                    group-hover/link:w-full
+                    transition-all duration-300 ease-in-out
+                  "
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <a 
+            href="#" 
+            class="
+              block w-full max-w-5xl mx-auto
+              transition-transform duration-500 ease-out 
+              hover:scale-110 hover:-translate-y-2
+            "
+          >
+            <img 
+              src="placeholder.png" 
+              alt="Furniture Store Demo Mockup" 
+              class="w-full h-auto object-contain mx-auto drop-shadow-sm select-none pointer-events-none"
+            />
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20">
+      
+      <h2 
+        class="
+          text-center mb-12 sm:mb-16
+          text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight
+          text-dark dark:text-white
+        "
+      >
+        FreshCart Features
+      </h2>
+
+      <div 
+        class="
+          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+          gap-6 sm:gap-8
+        "
+      >
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="./assets/bootstrap-CxRttz7s.png" 
+              alt="Bootstrap 5 Logo" 
+              class="
+                h-10 sm:h-12 w-auto object-contain
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Built with Latest Bootstrap
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Every code snippet you receive is crafted using <span class="text-blue-600 font-semibold">Bootstrap 5</span> , designed for seamless integration with the user interface. This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="./assets/sass-BkCdonz7.png" 
+              alt="Sass Logo" 
+              class="
+                h-10 sm:h-12 w-auto object-contain
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Easy to Customize with Sass
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Sass allows developers to use variables, nested rules, and reusable mixins, making it simpler to maintain and adjust styles across a project.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="data:image/png;base64,UklGRhAFAABXRUJQVlA4TAMFAAAv/051EVdgKAIZp38zIWjgud/UUNi2kXK0/7IMD2YCkNE/GiFo4Nw3SgIAbXC/Ag0oQP8wKBx7agEA7O///7p/3elI9VzGREzK2IVTloBW29acBgt0UoCBWsh6DBLyFw+RwJBVJ63X248vNN0R/Z+Amf/5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n//5n/8teayOek1SHXVKcqyl77VNTtuOekmy7ajnJB/bpe+F//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/36ZFXTXU4YK2lM+K+hrkgq6WyjMQU895TIH7SnnOehHkjnoif/4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//4j//+4TBU0JWiRuU//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uM//uO/RdRYbZpkrKDXh89QTTolOVaTTkmOFTTJWEGvbbJUbJTLvKLKf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf/zHf0/xm2XiV5LH7+Zvev7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/7jP/5bxfj+6ajPXwA=" 
+              alt="npm Logo" 
+              class="
+                h-8 sm:h-9 w-auto object-contain
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Kick-start Your Development
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Kick-start Your Development with npm and <span class="text-blue-600 font-semibold">Gulp</span> refers to streamlining the web development process using npm and Gulp, a task runner.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="./assets/js-B2gqmNKf.png" 
+              alt="JavaScript Logo" 
+              class="
+                h-10 sm:h-12 w-auto object-contain rounded-md
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Pure JavaScript
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            JavaScript code that remains relevant, maintainable, and compatible with evolving web technologies and standards.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="./assets/html-DK71Hj-a.png" 
+              alt="HTML5 Logo" 
+              class="
+                h-10 sm:h-12 w-auto object-contain
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            W3C Valid HTML Code
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Valid HTML ensures that your website is properly structured, accessible, and compatible with a wide range of browsers and devices.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="data:image/svg+xml,%3csvg%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20300'%20width='1667'%20height='2500'%3e%3cstyle%3e.st0{fill:%230acf83}.st1{fill:%23a259ff}.st2{fill:%23f24e1e}.st3{fill:%23ff7262}.st4{fill:%231abcfe}%3c/style%3e%3ctitle%3eFigma.logo%3c/title%3e%3cdesc%3eCreated%20using%20Figma%3c/desc%3e%3cpath%20id='path0_fill'%20class='st0'%20d='M50%20300c27.6%200%2050-22.4%2050-50v-50H50c-27.6%200-50%2022.4-50%2050s22.4%2050%2050%2050z'/%3e%3cpath%20id='path1_fill'%20class='st1'%20d='M0%20150c0-27.6%2022.4-50%2050-50h50v100H50c-27.6%200-50-22.4-50-50z'/%3e%3cpath%20id='path1_fill_1_'%20class='st2'%20d='M0%2050C0%2022.4%2022.4%200%2050%200h50v100H50C22.4%20100%200%2077.6%200%2050z'/%3e%3cpath%20id='path2_fill'%20class='st3'%20d='M100%200h50c27.6%200%2050%2022.4%2050%2050s-22.4%2050-50%2050h-50V0z'/%3e%3cpath%20id='path3_fill'%20class='st4'%20d='M200%20150c0%2027.6-22.4%2050-50%2050s-50-22.4-50-50%2022.4-50%2050-50%2050%2022.4%2050%2050z'/%3e%3c/svg%3e" 
+              alt="Figma Logo" 
+              class="
+                h-10 sm:h-12 w-auto object-contain
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Premium Figma File Included
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Premium Figma File Included means that the product or design package comes with a high-quality, fully editable Figma file.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center h-12">
+            <img 
+              src="data:image/svg+xml,%3csvg%20height='1952'%20viewBox='0%200%20509.58086729%20397.8808683'%20width='2500'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m0%20387.4%20245.52-385.39%20131.6%2083.84-192.11%20301.55z'%20fill='%23fbbc04'/%3e%3cpath%20d='m240.33%200h151.13v387.4h-151.13z'%20fill='%231a73e8'/%3e%3ccircle%20cx='83.72'%20cy='81.35'%20fill='%23ea4335'%20r='74.91'/%3e%3cpath%20d='m499.1%20279.76a107.64%20107.64%200%200%201%20-107.64%20107.64v-215.27a107.64%20107.64%200%200%201%20107.64%20107.63z'%20fill='%2334a853'/%3e%3cpath%20d='m391.46%20172.13v215.27a107.64%20107.64%200%200%201%200-215.27z'%20fill='%230d652d'/%3e%3cpath%20d='m474.3%2089.29a82.85%2082.85%200%200%201%20-82.84%2082.84v-165.69a82.85%2082.85%200%200%201%2082.84%2082.85z'%20fill='%231a73e8'/%3e%3cpath%20d='m391.46%206.44v165.69a82.85%2082.85%200%200%201%200-165.69z'%20fill='%23174ea6'/%3e%3c/svg%3e" 
+              alt="Google Fonts Logo" 
+              class="
+                h-10 sm:h-12 w-auto object-contain
+                select-none pointer-events-none
+              "
+            />
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Google Fonts
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Free and open-source library of web fonts provided by Google. The fonts can be quickly implemented via a simple link or import statement.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center w-12 h-12 rounded-full bg-[#E53E3E] text-white">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6.5-5.5h-2.1c-.2-1.07-.77-2.01-1.57-2.67l1.49-1.49c1.07 1.05 1.83 2.47 2.18 4.16zm-10.83-4.16l1.49 1.49c-.8.66-1.37 1.6-1.57 2.67H5.5c.35-1.69 1.11-3.11 2.17-4.16zM5.5 14.5h2.09c.2 1.07.77 2.01 1.57 2.67l-1.49 1.49c-1.06-1.05-1.82-2.47-2.17-4.16zm10.83 4.16l-1.49-1.49c.8-.66 1.37-1.6 1.57-2.67h2.09c-.35 1.69-1.11 3.11-2.17 4.16z"/>
+            </svg>
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Premium Support
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            An enhanced level of customer service provided to users who purchase a product. It typically includes faster response times, priority handling of issues.
+          </p>
+        </div>
+
+        <div 
+          class="
+            flex flex-col items-center text-center justify-start
+            w-full p-8 sm:p-10 rounded-2xl
+            bg-white border border-gray-100 shadow-sm
+            hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
+            dark:bg-gray-800 dark:border-gray-700/60 dark:hover:shadow-black/50
+            transition-all duration-300 ease-out
+          "
+        >
+          <div class="mb-6 flex items-center justify-center w-12 h-12 rounded-full bg-[#198754] text-white">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm-1 14c-1.2-.35-2.55-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5V8c1.45-1.1 3.55-1.5 5.5-1.5 1.15 0 2.4.2 3.5.5v12z"/>
+            </svg>
+          </div>
+
+          <h3 
+            class="
+              mb-3
+              text-xl font-semibold tracking-tight
+              text-dark dark:text-white
+            "
+          >
+            Well Documented
+          </h3>
+
+          <p 
+            class="
+              text-sm sm:text-base leading-relaxed
+              text-gray-500 dark:text-gray-400
+            "
+          >
+            Comprehensive and user-friendly documentation, providing clear instructions and guidance on how to effectively use and customize the template.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div 
+        class="
+          flex flex-col items-center justify-center text-center
+          w-full px-6 py-12 sm:py-16 sm:px-12 rounded-3xl
+          bg-white text-dark shadow-xl
+          dark:bg-gray-800 dark:border dark:border-gray-700
+        "
+      >
+        <h2 
+          class="
+            max-w-3xl mb-4
+            text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-tight leading-tight
+            text-dark dark:text-white
+          "
+        >
+          Build fast. Launch faster. with FreshCart Template
+        </h2>
+
+        <p 
+          class="
+            max-w-2xl mx-auto mb-8
+            text-sm sm:text-base md:text-lg leading-relaxed
+            text-gray-500 dark:text-gray-300
+          "
+        >
+          Start working with , the Impressive design, powerful features, and easy customization making website building faster, easier and more professional than ever.
+        </p>
+
+        <a 
+          href="https://codescandy.com/template/ecommerce-website-template/" 
+          target="_blank"
+          class="
+            inline-flex items-center justify-center 
+              px-3.5 py-2 sm:px-5 sm:py-2.5 
+              text-xs sm:text-sm font-medium 
+              bg-light text-dark border border-dark rounded-lg shadow-sm 
+              hover:bg-dark hover:text-white 
+              dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 
+              dark:hover:bg-white dark:hover:text-dark dark:hover:border-white 
+              active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand 
+              transition-all duration-200
+          "
+        >
+          Buy Now FreshCart
+        </a>
+      </div>
+    </section>
+
+    <!-- Foooter -->
+    <footer 
+      class="
+        w-full py-8
+        bg-white border-t border-gray-200/80
+        dark:bg-gray-900 dark:border-gray-800
+        transition-colors duration-200
+      "
+    >
+      <div 
+        class="
+          items-center justify-center gap-4 text-center
+          max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+          text-xs sm:text-sm
+          text-gray-500 dark:text-gray-400
+        "
+      >
+        <p>
+          © 2024, FreshCart UI - Multi Purpose Ecommerce HTML Template. Powered CodesCandy
+        </p>
+
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById('theme-toggle');
+      toggleBtn?.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
